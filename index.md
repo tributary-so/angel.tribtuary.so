@@ -17,6 +17,76 @@ size: 16:9
   --font-mono: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
 }
 
+@media screen {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #9945ff 0%, #14f195 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  th {
+    border-bottom: 2px solid #9945ff;
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 16px;
+    background: linear-gradient(135deg, #9945ff 0%, #14f195 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .col-title.good {
+    background: linear-gradient(135deg, #9945ff 0%, #14f195 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+.metric .num {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #9945ff 0%, #14f195 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+}
+}
+
+@media print {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.02em;
+    background: none;
+    color: #9945ff;
+  }
+  .footnote {
+    display: none;
+  }
+  script {
+    display: none;
+  }
+  th {
+    border-bottom: 2px solid #9945ff;
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 16px;
+  }
+  .col-title.good {
+    color: #9945ff;
+  }
+  .metric .num {
+    font-size: 32px;
+    font-weight: 700;
+    color: #9945ff;
+    display: block;
+  }
+}
+
 section {
   background-color: var(--color-background);
   background-image:
@@ -30,17 +100,6 @@ section {
   line-height: 1.6;
   font-size: 22px;
   padding: 64px 72px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #9945ff 0%, #14f195 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 h1 {
@@ -63,7 +122,7 @@ h2::after {
   position: absolute;
   left: 0;
   bottom: 4px;
-  width: 72px;
+  width: 256px;
   height: 3px;
   background: linear-gradient(90deg, #9945ff, #14f195);
   border-radius: 2px;
@@ -127,17 +186,6 @@ table {
   margin-top: 16px;
 }
 
-th {
-  border-bottom: 2px solid #9945ff;
-  padding: 10px 12px;
-  text-align: left;
-  font-size: 16px;
-  background: linear-gradient(135deg, #9945ff 0%, #14f195 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
 td {
   padding: 9px 12px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -182,15 +230,6 @@ section.lead em {
   border-radius: 10px;
   padding: 18px 22px;
 }
-.metric .num {
-  font-size: 32px;
-  font-weight: 700;
-  background: linear-gradient(135deg, #9945ff 0%, #14f195 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  display: block;
-}
 .metric .label {
   font-size: 15px;
   color: #333;
@@ -215,12 +254,6 @@ section.lead em {
   font-weight: 700;
 }
 .col-title.bad { color: #aaaaaa; }
-.col-title.good {
-  background: linear-gradient(135deg, #9945ff 0%, #14f195 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 
 footnote a {
   color: #888;
@@ -237,7 +270,6 @@ footnote {
   letter-spacing: 0.3px;
 }
 </style>
-<script defer data-domain="angel.tributary.so" src="https://p.chainsquad.com/js/script.js"></script>
 
 <!-- _class: lead -->
 <!-- _paginate: false -->
@@ -248,9 +280,9 @@ footnote {
 
 _Raising $250k Pre-Seed._
 
-<footnote>
-  <a href="./index.md">View markdown source</a>
-</footnote>
+<div>
+  <a class="footnote" href="./index.md">View markdown source</a>
+</div>
 
 ---
 
@@ -386,11 +418,9 @@ DeFi Saver and Summer.fi are the closest analogues. **No one operates on Solana.
 
 Most competitors automate **actions**. Tributary automates **money**.
 
-Using one underlying primitive:
-
 > `WHEN` → `PULL` → `ROUTE`
 
-Tributary can ...
+enables:
 
 - Pay a subscription
 - DCA into an asset
