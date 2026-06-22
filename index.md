@@ -184,8 +184,8 @@ Unique founder-market fit for this category.
 Capital deployed to transform Tributary from payment protocol to composable automation platform:
 
 - **Security audit (~30%)**: The single gate between today's product and enterprise adoption
-- **Composable execution layer (~27%)**: Ship WHEN &rarr; PULL &rarr; ROUTE in production
-- **Non Technical Co-founder (~27%)**: BD, DX, integration guides, developer onboarding
+- **Composable execution layer (~37%)**: Ship WHEN &rarr; PULL &rarr; ROUTE in production
+- **Non Technical Co-founder (~17%)**: BD, DX, integration guides, developer onboarding
 - **Operations & liquidity (~16%)**: Infrastructure, legal, liquidity pool
 
 **12-month milestones:**
