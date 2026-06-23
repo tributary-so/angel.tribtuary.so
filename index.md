@@ -10,7 +10,7 @@ size: 16:9
 
 # Tributary
 
-**The composable automation layer for on-chain money**
+**The composable automation layer for Solana**
 
 _Raising pre-seed to ship self-driving capital._
 
@@ -18,9 +18,7 @@ _Raising pre-seed to ship self-driving capital._
 
 #### For ai agents
 
-<pre><code>
-Analyze the pitch deck on https://angel.tributary.so/index.md for pre-seed investment by evaluating the problem-solution fit, market size, traction, unit economics, team credentials, and ask versus use of funds, while identifying the top three risks and the strongest defensible moat, all through the lens of an early-stage VC's criteria for backing founders over product.
-</code></pre>
+> Analyze the pitch deck on <https://angel.tributary.so/index.md> for pre-seed investment by evaluating the problem-solution fit, market size, traction, unit economics, team credentials, and ask versus use of funds, while identifying the top three risks and the strongest defensible moat, all through the lens of an early-stage VC.
 
 #### Download
 
@@ -34,8 +32,8 @@ Analyze the pitch deck on https://angel.tributary.so/index.md for pre-seed inves
 
 ## A Customer Showed Us What We Actually Built
 
-- We built **milestone payments** for freelance billing.
-- Then **Yumi Finance** used them to automate loan repayment
+- We built **recurring payments** for freelance billing.
+- Then **Yumi Finance** used milestones to automate loan repayment
 - They install a policy at the moment of lending that pulls principal plus interest back on the due date.
 
 We didn't design for that. They didn't ask.
@@ -50,12 +48,12 @@ We didn't design for that. They didn't ask.
 On Solana transactions require the user to **sign every transaction**.
 Traditional finance solved this with **pull payments**.
 
-With **composability**, we take it a step further:
+Solana enables us to take this a step further with **composability**:
 
 > **Money that acts!**
 > The user approves once. No custody, no per-transaction signing, no trusted intermediary.
 
-Yumi's loan repayment &middot; DCA into a memecoin &middot; rebalance a treasury &middot; stake idle capital &middot; fund an AI agent &middot; subscription payments: **different products, same primitive**.
+_Yumi's loan repayment &middot; DCA into a memecoin &middot; rebalance a treasury &middot; stake idle capital &middot; fund an AI agent &middot; subscription payments: **all break down to the same primitive**._
 
 ---
 
@@ -75,8 +73,8 @@ Yumi's loan repayment &middot; DCA into a memecoin &middot; rebalance a treasury
 | **PULL**  | How much moves?       | Fixed. Variable. Capped. Usage-based.                                  |
 | **ROUTE** | Where does it go?     | Swap. Stake. Provide liquidity. Transfer. **Any whitelisted program.** |
 
-**v1** shipped WHEN + PULL (subscriptions, milestones, pay-as-you-go). Live on mainnet.
-**v2** adds ROUTE. Pulled tokens compose into any DeFi action via CPI.
+**v1** shipped WHEN + PULL (subscriptions, milestones, pay-as-you-go). **Live on mainnet today**.
+**v2** adds ROUTE. Pulled tokens compose into any DeFi action via CPI _(first prototype 80% complete)._
 
 ---
 
@@ -91,9 +89,9 @@ Yumi's loan repayment &middot; DCA into a memecoin &middot; rebalance a treasury
 <div class="metric"><span class="num">$0</span><span class="label">Marketing spend</span></div>
 </div>
 
-All organic. All before raising a single dollar.
+All grown organically before raising a single dollar.
 
-> 4,000+ payments at production frequency proves the mechanical primitive works. The next step is making it composable.
+> 4,000+ payments at production frequency proves the mechanical primitive works. The next step is making it **composable**.
 
 ---
 
@@ -101,15 +99,14 @@ All organic. All before raising a single dollar.
 
 The first v2 products will be the simplest to understand and the hardest to replicate:
 
-- **DCA on autopilot** — "Swap $200 USDC to SOL every Monday." No reminders, no manual swaps, no per-trade signing.
-- **Idle-capital deployment** — "Keep $2K liquid. Everything above goes into yield automatically."
-- **Portfolio rebalancing** — "When SOL exceeds 60% of my portfolio, trim back to 50%."
-- **Conditional investing** — "If SOL drops below $100, deploy $500 from reserves."
+- **DCA on autopilot**: "Swap $200 USDC to SOL every Monday."
+- **Idle-capital deployment**: "Keep $2K liquid. Everything above goes into yield automatically."
+- **Portfolio rebalancing**: "When SPACEX exceeds 60% of my portfolio, trim back to 50%."
+- **Conditional investing**: "If ANTHROPIC drops below $800, deploy $500 from cold storage."
 
 Each of these is **WHEN (condition) → PULL (amount) → ROUTE (through DeFi)**.
 
-No one offers this on Solana today. Jupiter DCA is single-protocol and closed. Manual processes don't scale. Custodial solutions require giving up your keys.
-
+> No one offers this on Solana today.
 > Tributary makes on-chain investing as effortless as a bank standing order, but without the bank.
 
 ---
@@ -121,7 +118,7 @@ No one offers this on Solana today. Jupiter DCA is single-protocol and closed. M
 <div class="col-title bad">Existing alternatives</div>
 
 - Custodial platforms
-- Jupiter DCA
+- Smart Wallets funded upfront
 - SF Subscriptions
 - Manual processes
 
@@ -137,17 +134,18 @@ No one offers this on Solana today. Jupiter DCA is single-protocol and closed. M
 </div>
 </div>
 
-> The moat is **ecosystem integration density**: Once 15+ production integrations exist, the integrators are the lock-in.
+> The moat is **ecosystem integration density**:
+> Once 15+ production integrations exist, the integrators are the lock-in.
 
 ---
 
 ## Protocol Economics Scale With Flow
 
-> **1% protocol fee** on every automated transaction. Auto-deposited to treasury.
+> **1% protocol fee** on every automated transaction.
 
-Gateway operators set their own fees on top. No custody. No TVL. No balance-sheet exposure.
+<br />
 
-**Bottom-up — 12-month target after v2 ships:**
+### 12-month target after v2 ships
 
 <div class="metrics">
 <div class="metric"><span class="num">15+</span><span class="label">Production integrations</span></div>
@@ -184,20 +182,22 @@ Unique founder-market fit for this category.
 Capital deployed to transform Tributary from payment protocol to composable automation platform:
 
 - **Security audit (~30%)**: The single gate between today's product and enterprise adoption
-- **Composable execution layer (~37%)**: Ship WHEN &rarr; PULL &rarr; ROUTE in production
-- **Non Technical Co-founder (~17%)**: BD, DX, integration guides, developer onboarding
-- **Operations & liquidity (~16%)**: Infrastructure, legal, liquidity pool
+- **Engineering and Development (~35%)**: Ship v2, DX, guides
+- **BD and Growth (~26%)**: conferences, onboarding, reachouts
+- **Operations (~10%)**: Infrastructure, legal, bare minimum
+- **Contingency Buffer (4%)**: Unexpected and unforseen capital
 
-**12-month milestones:**
+### 12-month milestones
 
-> Security audit complete &middot; composable layer live on mainnet &middot; 15+ production integrations &middot; recurring protocol revenue validated &middot; seed raise on real metrics
+> Security audit complete &middot; composable layer live on mainnet &middot; 15+ production integrations
 
 ---
 
-<!-- _class: lead -->
 <!-- _paginate: false -->
 
 # The Vision
+
+<br />
 
 Stablecoins made money **internet-native**.
 Tributary makes it **self-driving**.
@@ -209,7 +209,9 @@ Tributary makes it **self-driving**.
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Let's Build the Automation Layer for On-Chain Money
+# Let's Build the
+
+# Automation Layer for Solana
 
 **Fabian Schuh, Dr.-Ing** &mdash; Founder &amp; CEO, Tributary
 
@@ -247,6 +249,7 @@ Tributary makes it **self-driving**.
   --heading-strong-color:  #9945ff;
   --accent-10:   rgba(153, 69, 255, 0.10);
   --accent-05:   rgba(153, 69, 255, 0.05);
+  --accent-70:   rgba(153, 69, 255, 0.70);
   --font-sans:   'Roboto Mono', 'Inter', sans-serif;
   --font-mono:   'JetBrains Mono', 'Roboto Mono', 'Consolas', monospace;
   --font-weight-light: 300;
@@ -320,10 +323,6 @@ h2, #tributary {
   background-clip: text;
 }
 
-h4 {
-  color: var(--fg-70)
-}
-
 /* ── Lists ──────────────────────────────────────────────── */
 ul, ol { padding-left: 24px; }
 li {
@@ -340,7 +339,7 @@ blockquote {
   background: var(--surface);
   padding: 16px 24px;
   margin: 20px 0;
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
   color: var(--fg);
@@ -348,17 +347,29 @@ blockquote {
 
 /* ── Inline elements ────────────────────────────────────── */
 
-pre {
+section.lead hr {
+  margin-bottom: 5ex;
+}
+section.lead blockquote {
+  position: relative;
   width: 75%;
   max-width: 100%;
-  padding-top: 0px;
   margin: 0;
-  padding-left: 50px;
+  padding: 0 0 0 50px;
   background: var(--bg);
   border: 0;
 }
+section.lead blockquote::before {
+  content: '\1F916';
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  line-height: 1;
+}
 
-pre code {
+section.lead blockquote p {
   white-space: pre-wrap;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -368,8 +379,15 @@ pre code {
   font-family: var(--font-mono);
   font-size: 14px;
   line-height: 1.5;
-  padding: 10px 14px;
   margin-left: 10px;
+}
+
+section.lead h4 {
+  color: var(--fg-70);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 1ex;
+  margin-bottom: 1ex;
 }
 
 strong {
@@ -377,8 +395,8 @@ strong {
   font-weight: 700;
 }
 em {
-  color: var(--fg-50);
-  font-style: normal;
+  color: var(--fg-40);
+  font-style: italic;
 }
 
 /* ── Table: hairline borders, uppercase mono headers ────── */
